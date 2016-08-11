@@ -81,7 +81,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "First card",
                     "subtitle": "Element #1 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "image_url": "http://www.gold-binary-robot.com/images/robot-img.png",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.messenger.com",
@@ -94,7 +94,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Second card",
                     "subtitle": "Element #2 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+                    "image_url": "http://core0.staticworld.net/images/article/2015/11/alpha2-100627416-large.jpg",
                     "buttons": [{
                         "type": "postback",
                         "title": "Postback",
