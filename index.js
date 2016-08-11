@@ -50,7 +50,7 @@ app.post('/webhook/', function (req, res) {
 
 const token = "<EAACoWFGJ1oQBAESExe0gThApyVDihf76Adt8rwnA1Sg7kAUFhSXQFRNgcQWJu5QvHyExvChMrlGCK054E0h3qxtbmp3nNQP7Tuf2xuIRdOXrsBKlqdLm5ZCgHcykyWJ0EKA6wC1CVqxhmcctRhgGz8twKE6yXnlyWPHA0LAZDZD>"
 
-//Function to echo back messages
+//Function to echo back messages and something
 function sendTextMessage(sender, text) {
     messageData = {
         text:text
