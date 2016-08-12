@@ -44,6 +44,7 @@ app.post('/webhook/', function (req, res) {
             }
             if(text.indexOf('sick') !== -1) {
                 sendSickReplyTextMessage(sender, "I'm sorry to hear that. Can I help you find a clinic?")
+                continue
             }
             sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
         }
