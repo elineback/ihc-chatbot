@@ -42,6 +42,9 @@ app.post('/webhook/', function (req, res) {
                 sendGenericMessage(sender)
                 continue
             }
+            if(text.indexOf('sick') !== -1) {
+                sendSickReplyTextMessage(sender, "I'm sorry to hear that. Can I help you find a clinic?")
+            }
             sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
         }
     }
@@ -52,6 +55,28 @@ const token = "EAACoWFGJ1oQBAESExe0gThApyVDihf76Adt8rwnA1Sg7kAUFhSXQFRNgcQWJu5Qv
 
 //Function to echo back messages and something
 function sendTextMessage(sender, text) {
+    messageData = {
+        text:text
+    }
+    request({
+        url: 'https://graph.facebook.com/v2.6/me/messages',
+        qs: {access_token:token},
+        method: 'POST',
+        json: {
+            recipient: {id:sender},
+            message: messageData,
+        }
+    }, function(error, response, body) {
+        if (error) {
+            console.log('Error sending messages: ', error)
+        } else if (response.body.error) {
+            console.log('Error: ', response.body.error)
+        }
+    })
+}
+
+//Function to echo back messages and something
+function sendSickReplyTextMessage(sender, text) {
     messageData = {
         text:text
     }
