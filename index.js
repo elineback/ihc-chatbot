@@ -46,6 +46,14 @@ app.post('/webhook/', function (req, res) {
                 sendSickReplyTextMessage(sender, "I'm sorry to hear that. Can I help you find a clinic?")
                 continue
             }
+            if(text.indexOf('hello') !== -1) {
+                sendSickReplyTextMessage(sender, "Hello to you")
+                continue
+            }
+            if(text.indexOf('yes') !== -1) {
+                sendSickReplyTextMessage(sender, "This should help " + "https://intermountainhealthcare.org/find-a-doctor/")
+                continue
+            }
             sendTextMessage(sender, "What does this mean? : " + text.substring(0, 200))
         }
     }
