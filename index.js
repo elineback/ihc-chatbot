@@ -48,12 +48,7 @@ app.post('/webhook/', function (req, res) {
                 sendSickReplyTextMessage(sender, "I'm sorry to hear that. Can I help you find a clinic?")
                 continue
             }
-            if (text === 'hello') {
-                sendTextMessage(sender, "Good day to you.")
-                continue
-            }
-            //sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
-            sendTextMessage(sender, "Are you trying to confuse me? What does this mean: " + text.substring(0, 200))
+            sendTextMessage(sender, "What does this mean? : " + text.substring(0, 200))
         }
     }
     res.sendStatus(200)
