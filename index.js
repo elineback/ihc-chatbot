@@ -113,12 +113,12 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
-                    "subtitle": "Element #1 of an hscroll",
+                    "title": "This is me",
+                    "subtitle": "Here is a link to Intermountain locations.",
                     "image_url": "http://www.gold-binary-robot.com/images/robot-img.png",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://www.messenger.com",
+                        "url": "https://intermountainhealthcare.org/locations/",
                         "title": "web url"
                     }, {
                         "type": "postback",
@@ -126,8 +126,8 @@ function sendGenericMessage(sender) {
                         "payload": "Payload for first element in a generic bubble",
                     }],
                 }, {
-                    "title": "Second card",
-                    "subtitle": "Element #2 of an hscroll",
+                    "title": "Second card contains answer to universe",
+                    "subtitle": "The answer is 42",
                     "image_url": "http://core0.staticworld.net/images/article/2015/11/alpha2-100627416-large.jpg",
                     "buttons": [{
                         "type": "postback",
