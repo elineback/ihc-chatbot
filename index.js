@@ -1,9 +1,7 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
-var fetch = require('node-fetch');
 var app = express()
-var crypto = require('crypto');
 
 app.set('port', (process.env.PORT || 5000))
 
