@@ -1,7 +1,9 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var request = require('request')
+var fetch = require('node-fetch');
 var app = express()
+var crypto = require('crypto');
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -46,7 +48,12 @@ app.post('/webhook/', function (req, res) {
                 sendSickReplyTextMessage(sender, "I'm sorry to hear that. Can I help you find a clinic?")
                 continue
             }
-            sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+            if (text === 'hello') {
+                sendGenericMessage(sender, "Good day to you.")
+                continue
+            }
+            //sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+            sendTextMessage(sender, "Are you trying to confuse me? What does this mean: " + text.substring(0, 200))
         }
     }
     res.sendStatus(200)
