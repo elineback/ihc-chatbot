@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
                 continue
             }
             if (text === 'hello') {
-                sendGenericMessage(sender, "Good day to you.")
+                sendTextMessage(sender, "Good day to you.")
                 continue
             }
             //sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
