@@ -115,7 +115,7 @@ function sendGenericMessage(sender) {
                 "elements": [{
                     "title": "This is me",
                     "subtitle": "Here is a link to Intermountain locations.",
-                    "image_url": "http://www.gold-binary-robot.com/images/robot-img.png",
+                    "image_url": "http://core0.staticworld.net/images/article/2015/11/alpha2-100627416-large.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://intermountainhealthcare.org/locations/",
@@ -128,7 +128,7 @@ function sendGenericMessage(sender) {
                 }, {
                     "title": "Second card contains answer to universe",
                     "subtitle": "The answer is 42",
-                    "image_url": "http://core0.staticworld.net/images/article/2015/11/alpha2-100627416-large.jpg",
+                    "image_url": "http://www.gold-binary-robot.com/images/robot-img.png",
                     "buttons": [{
                         "type": "postback",
                         "title": "Postback",
